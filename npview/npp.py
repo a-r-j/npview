@@ -13,8 +13,8 @@ def run(filename: str):
     try:
         data = prettymatrix.matrix_to_string(data, include_dimensions=True)
     except ValueError:
+        print("Shape: ", data.shape)
         pass
-    print("Shape: ", data.shape)
     print(data)
 
 
