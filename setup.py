@@ -66,6 +66,7 @@ setup(
     #   py_modules=["my_module"],
     #
     packages=find_packages(),  # Required
+    install_requires=["numpy", "prettymatrix"],  # Optional
     # To provide executable scripts, use entry points in preference to the
     # "scripts" keyword. Entry points provide cross-platform support and allow
     # `pip` to create the appropriate form of executable for the target
