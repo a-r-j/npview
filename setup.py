@@ -16,15 +16,15 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 
 # Collect names of bin/*py scripts
 # e.g. 'pdb_intersect=bin.pdb_intersect:main',
-binfiles = listdir(path.join(here, "datacli"))
+binfiles = listdir(path.join(here, "npview"))
 bin_py = [
-    f[:-3] + "=datacli." + f[:-3] + ":main" for f in binfiles if f.endswith(".py")
+    f[:-3] + "=npview." + f[:-3] + ":main" for f in binfiles if f.endswith(".py")
 ]
 print(bin_py)
 
 
 setup(
-    name="data-cli",  # Required
+    name="npview",  # Required
     version="0.0.1",  # Required
     # description='A swiss army knife for PDB files.',  # Optional
     long_description=long_description,  # Optional

@@ -1,2 +1,2 @@
 #!/usr/bin/env python
-__all__ = ["numpy"]
+__all__ = ["npv"]
