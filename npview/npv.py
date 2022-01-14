@@ -10,6 +10,7 @@ __email__ = "arian@jamasb.io"
 
 def run(filename: str):
     data = np.load(filename, allow_pickle=True)
+    print("Shape: ", data.shape)
     print(data)
 
 

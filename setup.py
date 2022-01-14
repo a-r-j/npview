@@ -17,19 +17,17 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 # Collect names of bin/*py scripts
 # e.g. 'pdb_intersect=bin.pdb_intersect:main',
 binfiles = listdir(path.join(here, "npview"))
-bin_py = [
-    f[:-3] + "=npview." + f[:-3] + ":main" for f in binfiles if f.endswith(".py")
-]
+bin_py = [f[:-3] + "=npview." + f[:-3] + ":main" for f in binfiles if f.endswith(".py")]
 print(bin_py)
 
 
 setup(
     name="npview",  # Required
     version="0.0.1",  # Required
-    description='CLI utility for previewing .npy files',  # Optional
+    description="CLI utility for previewing .npy files",  # Optional
     long_description=long_description,  # Optional
     long_description_content_type="text/markdown",  # Optional (see note above)
-    url='https://github.com/a-r-j/npview',  # Optional
+    url="https://github.com/a-r-j/npview",  # Optional
     author="Arian Jamasb",  # Optional
     author_email="arian@jamasb.io",  # Optional
     license="MIT License",
@@ -57,7 +55,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
     ],
-    keywords='numpy data .npy',  # Optional
+    keywords="numpy data .npy",  # Optional
     # You can just specify package directories manually here if your project is
     # simple. Or you can use find_packages().
     #
