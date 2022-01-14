@@ -23,7 +23,7 @@ print(bin_py)
 
 setup(
     name="npview",  # Required
-    version="0.0.2",  # Required
+    version="0.0.3",  # Required
     description="CLI utility for previewing .npy files",  # Optional
     long_description=long_description,  # Optional
     long_description_content_type="text/markdown",  # Optional (see note above)
