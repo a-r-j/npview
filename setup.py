@@ -26,10 +26,10 @@ print(bin_py)
 setup(
     name="npview",  # Required
     version="0.0.1",  # Required
-    # description='A swiss army knife for PDB files.',  # Optional
+    description='CLI utility for previewing .npy files',  # Optional
     long_description=long_description,  # Optional
     long_description_content_type="text/markdown",  # Optional (see note above)
-    # url='http://bonvinlab.org/pdb-tools',  # Optional
+    url='https://github.com/a-r-j/npview',  # Optional
     author="Arian Jamasb",  # Optional
     author_email="arian@jamasb.io",  # Optional
     license="MIT License",
@@ -57,7 +57,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
     ],
-    # keywords='bioinformatics protein structural-biology pdb',  # Optional
+    keywords='numpy data .npy',  # Optional
     # You can just specify package directories manually here if your project is
     # simple. Or you can use find_packages().
     #
@@ -89,9 +89,9 @@ setup(
     # maintainers, and where to support the project financially. The key is
     # what's used to render the link text on PyPI.
     project_urls={  # Optional
-        "Bug Reports": "https://github.com/haddocking/pdb-tools/issues",
-        "Source": "https://github.com/haddocking/pdb-tools",
+        "Bug Reports": "https://github.com/a-r-j/npview/issues",
+        "Source": "https://github.com/a-r-j/npview",
     },
     # Test Suite
-    test_suite="tests.test_all",
+    # test_suite="tests.test_all",
 )
